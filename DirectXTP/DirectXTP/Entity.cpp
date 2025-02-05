@@ -1,5 +1,6 @@
 #include "Entity.h"
 #include "Component.h"
+#include "Transform.h"
 
 Entity::Entity()
 {
@@ -24,7 +25,32 @@ void Entity::Update()
 
 void Entity::AddComponent(Component* newComponent)
 {
-	newComponent->SetEntity(this);
-	m_components.emplace(m_nextIdComponent, newComponent);
-	m_nextIdComponent++;
+	if (!m_components.empty()) 
+	{
+		for (auto& pair : m_components)
+		{
+			if (pair.second->GetID() == newComponent->GetID())
+			{
+				std::cout << "Already set this component to " << m_name << " !\n";
+			}
+			else
+			{
+				newComponent->SetEntity(this);
+				m_components.emplace(m_nextIdComponent, newComponent);
+				m_nextIdComponent++;
+
+				std::cout << "Component Added to " << m_name << " !\n";
+			}
+		}
+	}
+	else
+	{
+		newComponent->SetEntity(this);
+		m_components.emplace(m_nextIdComponent, newComponent);
+		m_nextIdComponent++;
+
+		std::cout << "Component Added  to " << m_name << " !\n";
+	}
+
+
 }

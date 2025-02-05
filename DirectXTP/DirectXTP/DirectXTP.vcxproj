@@ -131,7 +131,7 @@
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="DirectXTP.cpp" />
     <ClCompile Include="Entity.cpp" />
-    <ClCompile Include="Life.cpp" />
+    <ClCompile Include="LifeComponent.cpp" />
     <ClCompile Include="MeshComponent.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Transform.cpp" />
@@ -139,7 +139,7 @@
   <ItemGroup>
     <ClInclude Include="Component.h" />
     <ClInclude Include="Entity.h" />
-    <ClInclude Include="Life.h" />
+    <ClInclude Include="LifeComponent.h" />
     <ClInclude Include="MeshComponent.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Transform.h" />

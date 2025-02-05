@@ -4,6 +4,7 @@
 #include <iostream>
 
 class Component;
+class Transform;
 
 class Entity
 {

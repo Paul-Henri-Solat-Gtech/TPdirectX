@@ -2,10 +2,10 @@
 
 #include "Component.h"
 
-class Life : public Component
+class LifeComponent : public Component
 {
 public:
-	Life();
+	LifeComponent();
 	int GetHP() { return m_lifePoint; };
 	void SetHP(int value) { m_lifePoint = value; };
 

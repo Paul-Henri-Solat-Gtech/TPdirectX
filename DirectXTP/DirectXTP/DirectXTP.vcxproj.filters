@@ -27,7 +27,7 @@
     <ClCompile Include="MeshComponent.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Life.cpp">
+    <ClCompile Include="LifeComponent.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
@@ -47,7 +47,7 @@
     <ClInclude Include="MeshComponent.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="Life.h">
+    <ClInclude Include="LifeComponent.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="Player.h">
